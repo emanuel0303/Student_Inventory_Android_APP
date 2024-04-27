@@ -1,0 +1,377 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgpink">
+
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Heading: Occupational History -->
+        <TextView
+            android:id="@+id/occupational_history_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occupational History"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Employment Status -->
+        <TextView
+            android:id="@+id/employment_status_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employment Status"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/occupational_history_heading"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Dropdown for Employment Status -->
+        <Spinner
+            android:id="@+id/employment_status_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/employment_status_heading"
+            android:layout_marginTop="8dp"
+            android:entries="@array/employment_status_options" />
+
+        <!-- Job Stress -->
+        <TextView
+            android:id="@+id/job_stress_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Stress"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/employment_status_spinner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Dropdown for Job Stress -->
+        <Spinner
+            android:id="@+id/job_stress_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_stress_heading"
+            android:layout_marginTop="8dp"
+            android:entries="@array/job_stress_options" />
+
+        <!-- Job Satisfaction -->
+        <TextView
+            android:id="@+id/job_satisfaction_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Satisfaction"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/job_stress_spinner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Dropdown for Job Satisfaction -->
+        <Spinner
+            android:id="@+id/job_satisfaction_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_satisfaction_heading"
+            android:layout_marginTop="8dp"
+            android:entries="@array/job_satisfaction_options" />
+
+        <!-- Performance -->
+        <TextView
+            android:id="@+id/performance_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/job_satisfaction_spinner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Descriptive Text Box for Performance -->
+        <EditText
+            android:id="@+id/performance_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/performance_heading"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Describe performance..."
+            android:textSize="16sp"/>
+
+        <!-- Marital History -->
+        <TextView
+            android:id="@+id/marital_history_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital History"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/performance_description"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Marital Status -->
+        <TextView
+            android:id="@+id/marital_status_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital Status"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/marital_history_heading"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Radio Buttons for Marital Status -->
+        <RadioGroup
+            android:id="@+id/marital_status_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/marital_status_heading"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/single_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single"/>
+
+            <RadioButton
+                android:id="@+id/married_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married"/>
+
+            <RadioButton
+                android:id="@+id/divorced_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divorced"/>
+
+            <RadioButton
+                android:id="@+id/widowed_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Widowed"/>
+
+
+        </RadioGroup>
+
+        <!-- Spouse Details -->
+        <TextView
+            android:id="@+id/spouse_details_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spouse Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/marital_status_radio_group"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/age_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/spouse_details_heading"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Editable Text Box for Age -->
+        <EditText
+            android:id="@+id/age_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter age..."
+            android:textSize="16sp"/>
+
+        <!-- Occupation -->
+        <TextView
+            android:id="@+id/occupation_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occupation"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/age_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Occupation -->
+        <EditText
+            android:id="@+id/occupation_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/occupation_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter occupation..."
+            android:textSize="16sp"/>
+
+        <!-- Education -->
+        <TextView
+            android:id="@+id/education_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/occupation_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Education -->
+        <EditText
+            android:id="@+id/education_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/education_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter education..."
+            android:textSize="16sp"/>
+
+        <!-- Habits -->
+        <TextView
+            android:id="@+id/habits_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habits"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/education_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Habits -->
+        <EditText
+            android:id="@+id/habits_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/habits_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter habits..."
+            android:textSize="16sp"/>
+
+        <!-- Health -->
+        <TextView
+            android:id="@+id/health_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/habits_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Health -->
+        <EditText
+            android:id="@+id/health_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/health_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter health details..."
+            android:textSize="16sp"/>
+
+        <!-- Compatibility -->
+        <TextView
+            android:id="@+id/compatibility_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compatibility"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/health_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Compatibility -->
+        <EditText
+            android:id="@+id/compatibility_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/compatibility_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter compatibility details..."
+            android:textSize="16sp"/>
+
+        <!-- Kids -->
+        <TextView
+            android:id="@+id/kids_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kids"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/compatibility_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Kids -->
+        <EditText
+            android:id="@+id/kids_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kids_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter kids details..."
+            android:textSize="16sp"/>
+
+        <!-- Sexual Satisfaction -->
+        <TextView
+            android:id="@+id/sexual_satisfaction_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexual Satisfaction"
+            android:textSize="20sp"
+            android:textStyle=""
+            android:layout_below="@id/kids_edit_text"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Editable Text Box for Sexual Satisfaction -->
+        <EditText
+            android:id="@+id/sexual_satisfaction_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sexual_satisfaction_heading"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text_background"
+            android:hint="Enter sexual satisfaction details..."
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sexual_satisfaction_edit_text"
+            android:layout_marginTop="32dp"/>
+    </RelativeLayout>
+</ScrollView>

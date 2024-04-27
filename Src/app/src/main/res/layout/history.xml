@@ -1,0 +1,315 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgpink">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Presenting Concerns -->
+        <TextView
+            android:id="@+id/presenting_concerns_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presenting Concerns"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Box Outline for Concerns -->
+        <LinearLayout
+            android:id="@+id/concerns_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presenting_concerns_text"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner_box1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Concern 1 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_1_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 1"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_1_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Concern 2 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_2_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 2"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_2_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Concern 3 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_3_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 3"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_3_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Label for Mode of Onset -->
+        <TextView
+            android:id="@+id/mode_of_onset_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode of Onset"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/concerns_box"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Mode of Onset -->
+        <Spinner
+            android:id="@+id/mode_of_onset_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mode_of_onset_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/mode_of_onset_array"/>
+
+        <!-- Label for Duration -->
+        <TextView
+            android:id="@+id/duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/mode_of_onset_spinner"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Duration -->
+        <Spinner
+            android:id="@+id/duration_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/duration_array"/>
+
+        <!-- Label for Sleep -->
+        <TextView
+            android:id="@+id/sleep_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/duration_spinner"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Sleep -->
+        <Spinner
+            android:id="@+id/sleep_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleep_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/sleep_array"/>
+
+        <!-- Label for Appetite -->
+        <TextView
+            android:id="@+id/appetite_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appetite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/sleep_spinner"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Appetite -->
+        <Spinner
+            android:id="@+id/appetite_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appetite_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:entries="@array/appetite_array"/>
+
+        <!-- History of Presenting Concerns -->
+        <TextView
+            android:id="@+id/history_of_presenting_concerns_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History of Presenting Concerns"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/appetite_spinner"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Suicidal Thoughts -->
+        <TextView
+            android:id="@+id/suicidal_thoughts_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suicidal Thoughts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/history_of_presenting_concerns_label"
+            android:layout_marginTop="24dp"/>
+
+        <RadioGroup
+            android:id="@+id/suicidal_thoughts_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suicidal_thoughts_label"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/suicidal_thoughts_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+
+            <RadioButton
+                android:id="@+id/suicidal_thoughts_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- Suicidal Attempts -->
+        <TextView
+            android:id="@+id/suicidal_attempts_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suicidal Attempts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/suicidal_thoughts_radio_group"
+            android:layout_marginTop="24dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/suicidal_attempts_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter details if any"
+            android:layout_below="@id/suicidal_attempts_label"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/suicidal_attempts_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- History of Consultations -->
+        <TextView
+            android:id="@+id/history_of_consultations_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History of Consultations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/suicidal_attempts_input_layout"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Checkboxes for History of Consultations -->
+        <CheckBox
+            android:id="@+id/allopathic_doctor_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allopathic Doctor"
+            android:layout_below="@id/history_of_consultations_label"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/ayurvedic_homeopathic_doctor_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayurvedic/Homeopathic Doctor"
+            android:layout_below="@id/allopathic_doctor_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/psychiatrist_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychiatrist (Govt/Pvt)"
+            android:layout_below="@id/ayurvedic_homeopathic_doctor_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/neurologist_neurosurgeon_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neurologist/Neurosurgeon"
+            android:layout_below="@id/psychiatrist_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/astrologer_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Astrologer"
+            android:layout_below="@id/neurologist_neurosurgeon_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/temple_church_mosque_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temple/Church/Mosque"
+            android:layout_below="@id/astrologer_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/other_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:layout_below="@id/temple_church_mosque_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/none_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:layout_below="@id/other_checkbox"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@id/none_checkbox"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="24dp"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Presenting Concerns -->
+        <TextView
+            android:id="@+id/presenting_concerns_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presenting Concerns"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Box Outline for Concerns -->
+        <LinearLayout
+            android:id="@+id/concerns_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presenting_concerns_text"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner_box"
+            android:orientation="vertical">
+
+            <!-- Concern 1 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_1_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_1_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Concern 2 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_2_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 2"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_2_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Concern 3 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/concern_3_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Concern 3"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/concern_3_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Label for Mode of Onset -->
+        <TextView
+            android:id="@+id/mode_of_onset_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode of Onset"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/concerns_box"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Mode of Onset -->
+        <Spinner
+            android:id="@+id/mode_of_onset_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mode_of_onset_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/mode_of_onset_array"/>
+
+        <!-- Label for Duration -->
+        <TextView
+            android:id="@+id/duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/mode_of_onset_spinner"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Duration -->
+        <Spinner
+            android:id="@+id/duration_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/duration_array"/>
+
+        <!-- Label for Sleep -->
+        <TextView
+            android:id="@+id/sleep_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/duration_spinner"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Sleep -->
+        <Spinner
+            android:id="@+id/sleep_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sleep_label"
+            android:layout_marginTop="8dp"
+            android:entries="@array/sleep_array"/>
+
+        <!-- Label for Appetite -->
+        <TextView
+            android:id="@+id/appetite_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appetite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/sleep_spinner"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Appetite -->
+        <Spinner
+            android:id="@+id/appetite_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appetite_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/appetite_array"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@id/appetite_spinner"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+</ScrollView>

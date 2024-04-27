@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575138411557",
+    "project_id": "stustore-a367f",
+    "storage_bucket": "stustore-a367f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575138411557:android:d0830e20d398f867cf7bcc",
+        "android_client_info": {
+          "package_name": "com.example.inventory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGiKW_BWbt2VU4zAIDQoq-iLu-1VdwRhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

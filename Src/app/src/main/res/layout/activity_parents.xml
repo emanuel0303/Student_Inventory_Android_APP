@@ -1,0 +1,379 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgpink">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nature of Treatment / Therapy -->
+        <TextView
+            android:id="@+id/nature_of_treatment_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nature of Treatment / Therapy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Text Box for Nature of Treatment / Therapy -->
+        <EditText
+            android:id="@+id/nature_of_treatment_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nature_of_treatment_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Medicine -->
+        <TextView
+            android:id="@+id/medicine_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/nature_of_treatment_text_box"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Text Box for Medicine -->
+        <EditText
+            android:id="@+id/medicine_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medicine_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/medicine_text_box"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Text Box for Duration -->
+        <EditText
+            android:id="@+id/duration_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Response -->
+        <TextView
+            android:id="@+id/response_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/duration_text_box"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- RadioGroup for Response -->
+        <RadioGroup
+            android:id="@+id/response_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/response_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/response_well_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Well" />
+
+            <RadioButton
+                android:id="@+id/response_not_so_well_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not so Well" />
+
+            <RadioButton
+                android:id="@+id/response_poor_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poor" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/medical_history_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical History"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/response_radio_group"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Checkbox for Medical History -->
+        <CheckBox
+            android:id="@+id/ceasure_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceasure"
+            android:layout_below="@id/medical_history_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/blood_pressure_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure"
+            android:layout_below="@id/ceasure_checkbox"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/diabetics_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetics"
+            android:layout_below="@id/blood_pressure_checkbox"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/hormonal_issues_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hormonal Issues"
+            android:layout_below="@id/diabetics_checkbox"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/physical_injury_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physical Injury"
+            android:layout_below="@id/hormonal_issues_checkbox"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Descriptive Box for Medical History -->
+        <EditText
+            android:id="@+id/medical_history_descriptive_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/physical_injury_checkbox"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Please describe any other medical history"/>
+
+        <!-- Family History -->
+
+
+
+        <!-- Family History -->
+        <TextView
+            android:id="@+id/family_history_text_box_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family History"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/medical_history_descriptive_box"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Text Box for Family History -->
+        <EditText
+            android:id="@+id/family_history_text_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/family_history_text_box_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Please input family history"/>
+        <!-- Family Type -->
+        <TextView
+            android:id="@+id/family_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Type"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/family_history_text_box"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Dropdown for Family Type -->
+        <Spinner
+            android:id="@+id/family_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/family_type_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/family_type_options"/>
+
+        <!-- Consanguinity In Parents -->
+        <TextView
+            android:id="@+id/consanguinity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consanguinity In Parents"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/family_type_spinner"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Dropdown for Consanguinity In Parents -->
+        <Spinner
+            android:id="@+id/consanguinity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/consanguinity_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/consanguinity_options"/>
+
+        <!-- Parental Marriage -->
+        <TextView
+            android:id="@+id/parental_marriage_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parental Marriage"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/consanguinity_spinner"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Dropdown for Parental Marriage -->
+        <Spinner
+            android:id="@+id/parental_marriage_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parental_marriage_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/parental_marriage_options"/>
+
+        <!-- Residence -->
+        <TextView
+            android:id="@+id/residence_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residence"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/parental_marriage_spinner"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Dropdown for Residence -->
+        <Spinner
+            android:id="@+id/residence_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/residence_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/residence_options"/>
+
+        <!-- Family Size -->
+        <TextView
+            android:id="@+id/family_size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Size"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/residence_spinner"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Text Box for Family Size -->
+        <EditText
+            android:id="@+id/family_size_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/family_size_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Average Family Monthly Income -->
+        <TextView
+            android:id="@+id/family_income_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Family Monthly Income"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/family_size_edit_text"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/family_income_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/family_income_label"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/average_income_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average" />
+
+            <RadioButton
+                android:id="@+id/below_average_income_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Below Average" />
+
+            <RadioButton
+                android:id="@+id/above_average_income_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Above Average" />
+
+        </RadioGroup>
+
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@id/family_income_radio_group"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+</ScrollView>

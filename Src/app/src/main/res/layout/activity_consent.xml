@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ConsentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSENT FORM"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I understand that I need to be committed to counselling sessions consistently to avail the best possible results. I was made aware of the confidentiality clause and my queries about the same were answered to my satisfaction. Although I know I can stop attending sessions at my own will, I am required to inform about the same before my last session. In case of Medico Legal Issues, I have been made aware that the center doesn't participate and provide any documents due to its internal policy. I am aware that taking counselling is a necessary process and in the long run it has a substantial positive outcome on our psychological well-being. The counsellor is available throughout this process to aid you in a holistic way, which could improve your understanding about yourself and the distressing issues that you could be going through."
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkBoxAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

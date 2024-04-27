@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bgpink">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Heading: Personality -->
+            <TextView
+                android:id="@+id/personality_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personality"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Subheading: Social Relationship -->
+            <TextView
+                android:id="@+id/social_relationship_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social Relationship with family members /friends"
+                android:textSize="20sp"
+                android:textStyle=""
+                android:layout_below="@id/personality_heading"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Radio Group for Yes/No -->
+            <RadioGroup
+                android:id="@+id/social_relationship_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/social_relationship_heading"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/yes_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/no_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+
+            <!-- Subheading: Hobbies -->
+            <TextView
+                android:id="@+id/hobbies_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobbies"
+                android:textSize="20sp"
+                android:textStyle=""
+                android:layout_below="@id/social_relationship_radio_group"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Hobbies -->
+            <EditText
+                android:id="@+id/hobbies_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hobbies_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter hobbies..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Fantasies -->
+            <TextView
+                android:id="@+id/fantasies_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fantasies"
+                android:textSize="20sp"
+                android:textStyle=""
+                android:layout_below="@id/hobbies_edit_text"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Fantasies -->
+            <EditText
+                android:id="@+id/fantasies_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fantasies_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter fantasies..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Energy -->
+            <TextView
+                android:id="@+id/energy_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Energy"
+                android:textSize="20sp"
+                android:textStyle=""
+                android:layout_below="@id/fantasies_edit_text"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Energy -->
+            <EditText
+                android:id="@+id/energy_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/energy_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter energy level..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Habits -->
+            <TextView
+                android:id="@+id/habits_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/energy_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Checkboxes for Habits -->
+            <CheckBox
+                android:id="@+id/smoking_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smoking"
+                android:layout_below="@id/habits_heading"
+                android:layout_marginTop="16dp"/>
+
+            <CheckBox
+                android:id="@+id/alcohol_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alcohol"
+                android:layout_below="@id/smoking_checkbox"
+                android:layout_marginTop="8dp"/>
+
+            <CheckBox
+                android:id="@+id/drugs_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drugs"
+                android:layout_below="@id/alcohol_checkbox"
+                android:layout_marginTop="8dp"/>
+
+            <CheckBox
+                android:id="@+id/paan_gutka_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paan/Gutka"
+                android:layout_below="@id/drugs_checkbox"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Custom Text Box for Other Habits -->
+            <EditText
+                android:id="@+id/other_habits_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/paan_gutka_checkbox"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Other habits..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Specific Details -->
+            <TextView
+                android:id="@+id/specific_details_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specific Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/other_habits_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Specific Details -->
+            <EditText
+                android:id="@+id/specific_details_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specific_details_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter specific details..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Likes-Dislikes -->
+            <TextView
+                android:id="@+id/likes_dislikes_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Likes-Dislikes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/specific_details_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Likes-Dislikes -->
+            <EditText
+                android:id="@+id/likes_dislikes_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/likes_dislikes_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter likes-dislikes..."
+                android:textSize="16sp"/>
+
+            <!-- Subheading: Interests -->
+            <TextView
+                android:id="@+id/interests_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interests"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/likes_dislikes_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+            <!-- Custom Text Box for Interests -->
+            <EditText
+                android:id="@+id/interests_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/interests_heading"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text_background"
+                android:hint="Enter interests..."
+                android:textSize="16sp"/>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_below="@id/interests_edit_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

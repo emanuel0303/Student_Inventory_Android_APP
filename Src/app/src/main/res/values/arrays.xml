@@ -1,0 +1,86 @@
+<resources>
+    <string-array name="mode_of_onset_array">
+        <item>Not Known</item>
+        <item>Sub Acute</item>
+        <item>Gradual</item>
+        <item>Acute</item>
+    </string-array>
+
+    <string-array name="duration_array">
+        <item>Not Known</item>
+        <item>1 Day</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+        <item>2 or More Years</item>
+        <item>Whole Life</item>
+    </string-array>
+
+    <string-array name="sleep_array">
+        <item>Normal</item>
+        <item>Insomnia: Early</item>
+        <item>Insomnia: Middle</item>
+        <item>Insomnia: Late</item>
+    </string-array>
+
+    <string-array name="appetite_array">
+        <item>Normal</item>
+        <item>Increased</item>
+        <item>Decreased</item>
+    </string-array>
+
+    <string-array name="response_options">
+        <item>asthma</item>
+        <item>Skin problems</item>
+        <item>Fits</item>
+        <item>Headache</item>
+        <item>Head Injury</item>
+        <item>Operations</item>
+        <item>Describe in any</item>
+    </string-array>
+
+    <string-array name="family_history_options">
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+
+    <string-array name="family_type_options">
+        <item>Joint</item>
+        <item>Nuclear</item>
+        <item>Extended</item>
+    </string-array>
+
+    <string-array name="consanguinity_options">
+        <item>Present</item>
+        <item>Absent</item>
+    </string-array>
+
+    <string-array name="parental_marriage_options">
+        <item>Arrange</item>
+        <item>Love</item>
+    </string-array>
+
+    <string-array name="residence_options">
+        <item>Rural</item>
+        <item>Urban</item>
+        <item>Sub Urban</item>
+    </string-array>
+    <array name="employment_status_options">
+        <item>Employed</item>
+        <item>Unemployed</item>
+        <!-- Add more options if needed -->
+    </array>
+    <array name="job_stress_options">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </array>
+
+    <array name="job_satisfaction_options">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </array>
+</resources>

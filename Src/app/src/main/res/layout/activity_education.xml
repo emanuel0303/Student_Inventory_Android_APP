@@ -1,0 +1,304 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpink">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Childhood &amp; Education History"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Subheading: Health during Childhood -->
+        <TextView
+            android:id="@+id/text_health_subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health during Childhood:"
+            android:textSize="20sp"
+            android:layout_below="@id/text_heading"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Health during Childhood -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/health_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_health_subheading"
+            android:layout_marginTop="8dp"
+            android:hint="Enter health details...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subheading: Childhood Traumas -->
+        <TextView
+            android:id="@+id/text_traumas_subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Childhood Traumas:"
+            android:textSize="20sp"
+            android:layout_below="@id/health_layout"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Childhood Traumas -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/traumas_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_traumas_subheading"
+            android:layout_marginTop="8dp"
+            android:hint="Enter childhood traumas...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_traumas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subheading: Education Qualification -->
+        <TextView
+            android:id="@+id/text_education_subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education Qualification:"
+            android:textSize="20sp"
+            android:layout_below="@id/traumas_layout"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Education Qualification -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/education_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_education_subheading"
+            android:layout_marginTop="8dp"
+            android:hint="Enter education qualification...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Subheading: Remarks -->
+        <TextView
+            android:id="@+id/text_remarks_subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks:"
+            android:textSize="20sp"
+            android:layout_below="@id/education_layout"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Remarks -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/remarks_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_remarks_subheading"
+            android:layout_marginTop="8dp"
+            android:hint="Enter remarks...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Heading: Menstrual History -->
+        <TextView
+            android:id="@+id/text_menstrual_history_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexual History"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/remarks_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Subheading: Sexual History -->
+        <TextView
+            android:id="@+id/text_sexual_history_subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menstrual History:"
+            android:textSize="20sp"
+            android:layout_below="@id/text_menstrual_history_heading"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Menstrual history -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menstrual_history_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_sexual_history_subheading"
+            android:layout_marginTop="8dp"
+            android:hint="Menstrual history...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_menstrual_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Knowledge of sex -->
+        <TextView
+            android:id="@+id/text_sex_knowledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knowledge of sex:"
+            android:textSize="20sp"
+            android:layout_below="@id/menstrual_history_layout"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Checkboxes for Knowledge of sex -->
+        <CheckBox
+            android:id="@+id/checkbox_masturbation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masturbation"
+            android:layout_below="@id/text_sex_knowledge"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_nocturnal_emission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nocturnal Emission"
+            android:layout_below="@id/checkbox_masturbation"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_premature_ejaculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premature Ejaculation"
+            android:layout_below="@id/checkbox_nocturnal_emission"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_impotence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impotence"
+            android:layout_below="@id/checkbox_premature_ejaculation"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_erectile_dysfunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erectile Dysfunction"
+            android:layout_below="@id/checkbox_impotence"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:id="@+id/text_homosexuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homosexuality:"
+            android:textSize="20sp"
+            android:layout_below="@id/checkbox_erectile_dysfunction"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Input for Homosexuality -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/homosexuality_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_homosexuality"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your response...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_homosexuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Love/Relationship -->
+        <TextView
+            android:id="@+id/text_love_relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love/Relationship:"
+            android:textSize="20sp"
+            android:layout_below="@id/homosexuality_input_layout"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Radio buttons for Love/Relationship -->
+        <RadioGroup
+            android:id="@+id/radio_group_love_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_love_relationship"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/radio_group_love_relationship"
+            android:layout_marginTop="32dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

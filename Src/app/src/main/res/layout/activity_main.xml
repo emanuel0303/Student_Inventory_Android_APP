@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_inventory"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Student Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Date of Birth -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Gender -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Age -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- City -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- State -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Pin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- Education -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Informant Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informant Name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp"/>
+            <EditText
+                android:id="@+id/ed10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Table Layout to Display Data -->
+        <TableLayout
+            android:id="@+id/tb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
